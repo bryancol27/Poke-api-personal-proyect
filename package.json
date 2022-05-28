@@ -1,0 +1,13 @@
+{
+  "name": "pokeapi-proyect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass --watch ./sass/main.scss ./css/main.css"
+  },
+  "keywords": [],
+  "author": "Bryan Aranzales <bryan27cas@hotmail.com>",
+  "license": "MIT"
+}

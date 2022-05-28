@@ -1,0 +1,60 @@
+.main__results{
+    margin-top: 25px;
+    width: 100%;
+    &__pokemon{
+        @include resultBox()
+    }
+}
+
+.main__results__pokemon.result_1{
+    figure{
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+        img{
+            width: 100%;
+            height: 250px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        figcaption{
+            margin-top: 10px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            color: $color-oscuro;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.main__results__pokemon.result_2{
+    h3{
+        font-size: 2rem;
+        text-align: center;
+        color: $color-oscuro;
+        margin-bottom: 15px;
+    }
+    .abilityPlace{
+        @include featureContent;
+    }
+    .featuresPlace{
+        @include featureContent;
+    }
+}
+
+.main__results__pokemon.result_3{
+    h2{
+        margin-bottom: 15px;
+    }
+    .main__results__des{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        @include featureContent;
+        p{
+            margin: 5px 0 30px;
+        }
+    }
+}

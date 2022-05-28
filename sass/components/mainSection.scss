@@ -1,0 +1,21 @@
+main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding-top: 20px;
+    .main__principal{
+        transform: translateY(40vh);
+        @include mainBox()
+    }
+}
+
+.mainUp{
+    animation: upMove;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    @include mainBox()
+}
+
+
+
+

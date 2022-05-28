@@ -1,0 +1,173 @@
+@keyframes upMove {
+    0%{
+        transform: translateY(40vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes upMove2 {
+    0%{
+        transform: translateY(80vh);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(400px);
+        opacity: 1;
+    }
+}
+@keyframes downMove {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(100px);
+        opacity: 1;
+    }
+}
+@keyframes changeColorTitle{
+    0%{
+        color: $color-primario;
+    }
+    50%{
+        color: $color-opaco;
+    }
+    100%{
+        color: $color-primario
+    }
+}
+@keyframes buttonVisibilityChangue{
+    0%{
+        transform: rotateY(90deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes load{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    0%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes cardResults {
+    0%{
+        transform: translateY(150px);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes noResults{
+    0%{
+        opacity: 0;
+        visibility: visible;
+    }
+    25%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.4;
+        visibility: hidden;
+    }
+}
+
+@keyframes rotateCircle{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes circleLines{
+    0%{
+        transform: translateY(-25px);
+    }
+    80%{
+        transform: translateY(25px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes upDown {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.hidden__button{
+    transform: rotateY(90deg);
+}
+
+.visible__button{
+    animation: buttonVisibilityChangue;
+    perspective: 8px;
+    transform: translateZ(8px);
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+.form__space__input:hover{
+    border-color: $color-primario;
+}
+
+.loadingApi{
+    animation: load 1s ease-in 0s 3;
+}
+
+.hidden{
+    display: none;
+}
+
+.visible_noResults{
+    animation: noResults 4s cubic-bezier(0,.91,.82,-0.05) 0s 1;
+    display: grid;
+}
+.visible_blank{
+    animation: upDown 1.5s ease 0s 1;
+}
+.visible_circle{
+    animation: rotateCircle 1s linear 0s 1;
+}
+.visible_lines{
+    animation: circleLines 2.5s linear 0s 1;
+}
+.visible_text{
+    animation: upDown 1.5s ease 0s 1;
+}
+
+
+.visible__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    animation: cardResults;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+}

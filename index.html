@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>PokemonSearch</title>
+</head>
+<body>
+    
+    <main>
+        <section class="main__principal" id="finderForm">
+
+            <div class="main__principal__title">
+                <img src="./imgs/assets/pokeBola.png" alt="PokeBola" id="imgPokebola">
+                    <h1 class="main__principal__title__h1">The Pokemon <span class="main__principal__title__h1-span">Search</span></h1>
+            </div>
+
+            <form action="" class="form">
+                <label for="pokeName" class="form__space">
+                    <input type="text" name="pokeName" autocomplete="off" class="form__space__input" placeholder="PIKACHU">
+                    <button type="button" class="form__space__button hidden__button"><span>🔎</span></button>
+                </label>
+            </form>
+
+        </section>
+
+        <section class="main__results hidden" id="sectionResults">
+            <div class="main__results__pokemon result_1">
+                <h2>Name and image</h2>
+                <figure>
+                    <img src="" alt="" class="main-search-img" id="pokemonImg">
+                    <figcaption class="main-search-name" id="pokemonId"></figcaption>
+                    <figcaption class="main-search-name" id="pokemonId2"></figcaption>
+                </figure>
+
+            </div>
+
+            <div class="main__results__pokemon result_2">
+                <h2>Power and others</h2>
+                
+                <h3>Habilidades</h3>
+                <div class="abilityPlace" id="abilityPlace">
+                    <!-- <p class="ability"><span></p> -->
+                </div>
+
+                <h3>Caracteristicas</h3>
+                <div id="featuresPlace" class="featuresPlace">
+                    <!--p class="featuresPokemon"><span></p> -->
+                </div>
+
+            </div>
+
+            <div class="main__results__pokemon result_3">
+                <h2>About this pokemon</h2>
+                <div id="main__results__des" class="main__results__des">
+                    <!-- desZone -->
+                </div>
+            </div>
+
+
+        </section>
+        
+        <section class="main__history__place firstTimeDom__history" id="main__history__place">
+            <!-- <div class="main__history__place-box"></div> -->
+        </section>
+
+        <section class="main__no__results hidden" id="main__no__results">
+            <div class="main__no__results__blank" id="main__no__results__blank">
+                <div class="main__no__results__blank-circle" id="main__no__results__blank-circle">
+                    <div class="line" id="line"></div>
+                    <div class="line" id="line"></div>
+                </div>
+                <p class="main__no__results__blank-message" id="main__no__results__blank-message"></p>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./src/nodos.js" type="module"></script>
+    <script src="./src/main.js" type="module"></script>
+</body>
+</html>

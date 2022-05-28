@@ -1,0 +1,35 @@
+.main__history__place{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &-box{
+        height: 150px;
+        width: 150px;
+        border: 1px solid $color-primario;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background 1s;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-box:hover{
+        background-color: $color-primario;
+        transition: background 0.2s;
+    }
+}
+
+.firstTimeDom__history{
+    animation: upMove2 2s ease-in-out forwards;
+}
+
+.secondTimeDom__history{
+    animation: downMove 2s ease-in-out forwards;
+}
+
